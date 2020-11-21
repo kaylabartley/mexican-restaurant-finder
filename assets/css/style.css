@@ -5,6 +5,11 @@ body {
 body::-webkit-scrollbar {
 	display: none; /* Hide scrollbar for Chrome, Safari and Opera https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 }
+.scroll {
+    overflow-y: auto;
+    height: 38vh;
+    margin: 5vh;
+}
 #top-container {    
     background-image: url('../images/bg.png'); 
     background-repeat: no-repeat; 
@@ -108,3 +113,26 @@ form {
   .row {
       text-align: center;
   }
+
+
+  /*--------------------------------------------------------------*/
+
+h2 {
+    color: #e9751d;
+    font-size: 4vh;
+}
+h3 {
+    font-size: 2.6vh;
+}
+
+
+  .data {
+    padding: 4vh 10vh;
+    background-color: #F5F5F5;
+    border-bottom : green solid 1px;
+  }
+  
+  .hide-dec {
+    text-decoration: none;
+  }
+  

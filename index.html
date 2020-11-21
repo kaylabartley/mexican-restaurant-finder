@@ -37,13 +37,10 @@
         <div class="row align-center small-6 medium-6 large-4 container-padded">
             <form >
                 <h4 class="text-center">Search For Mexican Food in Your Area!</h4>
-                <label>Zip Code
-                <input type="text" id = "zip" placeholder="ex: 12345">
+                <label>City
+                <input type="text" id = "cit" placeholder="ex: New York City">
                 </label>
-                <label>Search
-                <input type="text">
-                </label>
-                <p><input type="submit" class="button expanded" value="Search" style= "background-color:green ;"></input></p>
+                <p><input id="submit" type="submit" class="button expanded" value="Search" style= "background-color:green ;"></input></p>
             </form>
           
         </div>
@@ -62,11 +59,17 @@
         data-href="https://kaylabartley.github.io/mexican-restaurant-finder/" 
         data-layout="button_count">
         </div>
+        <div class="scroll">
+            <div class="row">
+                <div class = "print columns medium-12"></div>
+            </div>
+        </div>
 
         
 
     </section>
     
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgB7X79JigNydzLL7lk-EzwbUz1IOm7wo&libraries=places"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
