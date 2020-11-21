@@ -32,7 +32,8 @@ $(document).ready(function() {
         lat = place.geometry.location.lat();
         long = place.geometry.location.lng();
     });
-    $("#submit").on("click", function() {
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
         select(lat, long);
     });
 
