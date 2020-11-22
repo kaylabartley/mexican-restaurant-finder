@@ -1,6 +1,6 @@
 /* saves previously used zipcodes to local client-side storage */
 
-function persistInput(input)
+/*function persistInput(input)
 {
     var key = "input-" + input.id;
 
@@ -14,7 +14,7 @@ function persistInput(input)
   {
       localStorage.setItem(key, input.value);
   });
-}
+}*/
 
 
 /*----------------------------------------------------------------------*/
@@ -32,8 +32,8 @@ $(document).ready(function() {
     });
     $("#submit").on("click", function(event) {
         event.preventDefault();
-        var inputElement = document.getElementById("cit");
-        persistInput(inputElement);
+        /*var inputElement = document.getElementById("cit");
+        persistInput(inputElement);*/
         select(lat, long);
     });
 
