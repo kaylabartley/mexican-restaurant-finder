@@ -1,23 +1,21 @@
 /* saves previously used zipcodes to local client-side storage */
 
-function persistInput(input)
+/*function persistInput(input)
 {
-  var key = "input-" + input.id;
+    var key = "input-" + input.id;
 
-  var storedValue = localStorage.getItem(key);
+    var storedValue = localStorage.getItem(key);
 
-  if (storedValue)
-      input.value = storedValue;
-
+    if (storedValue){
+        input.value = storedValue;
+        $('.recent-cities').html("<p>"+input.value+"</p>");
+    }
   input.addEventListener('input', function ()
   {
       localStorage.setItem(key, input.value);
   });
-}
+}*/
 
-var inputElement = document.getElementById("cit");
-
-persistInput(inputElement);
 
 /*----------------------------------------------------------------------*/
 
@@ -25,7 +23,7 @@ $(document).ready(function() {
     var input = document.getElementById('cit');
     var autocomplete = new google.maps.places.Autocomplete(input);
     var lat=0;
-    var long = 3;
+    var long = 0;
     google.maps.event.addListener(autocomplete, 'place_changed', function () {
         var place = autocomplete.getPlace();
         document.getElementById('cit').value = place.name;
@@ -34,6 +32,8 @@ $(document).ready(function() {
     });
     $("#submit").on("click", function(event) {
         event.preventDefault();
+        /*var inputElement = document.getElementById("cit");
+        persistInput(inputElement);*/
         select(lat, long);
     });
 
